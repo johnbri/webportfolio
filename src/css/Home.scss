@@ -14,13 +14,28 @@
         flex-direction: row;
         justify-content: space-evenly;
         align-content: center;
-        
         background-color: rgb(255, 255, 255);
-        
         height:50px;
         box-shadow: 0px 5px 10px #131a3a23;
+
+        a.icon {
+            display:none;
+            @media screen and (max-width: 600px) {
+                float: right;
+                display: block;
+            }
+        }
+
+        /*.responsive a.icon {
+            @media screen and (max-width: 600px) {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+          }*/
         
-        button{
+        
+        a{
             height:inherit;
             flex:1;
             font-size: 16px;
@@ -28,22 +43,47 @@
             border:transparent;
             color: #131a3a;
             transition-duration: 0.4s;
+            text-align: center;
+            text-decoration: none;
+            line-height:50px;
             
-            
+            /*@media screen and (max-width: 600px) {
+                display: none;
+            }*/
         }
 
-        button:hover { 
+        /*.responsive a {
+            @media screen and (max-width: 600px) {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+          }*/
+
+        a:hover { 
             flex-grow: 1.2;
             background:#002aff;
             color:white;
           }
+
         
         .name{
-            
+            height:inherit;
+            flex:1;
+            font-size: 16px;
+            background: transparent;
+            border:transparent;
+            color: #131a3a;
+            transition-duration: 0.4s;
             font-family: 'GlacialIndifferenceBold'; font-weight: normal; 
             font-style: normal; 
             color: #002aff;
-            
+        }
+
+        .contact{
+            @media (max-width: 600px) {
+                display: none;
+            }
         }
     }
 }
@@ -57,7 +97,7 @@
     
     .headerCard {
         min-height: 70vh;
-        width:85%;
+        width:90%;
         max-width: 800px;
         
         display: flex;
@@ -131,8 +171,7 @@
                 
             }
 
-
-            button{
+            a{
                 font-family: 'GlacialIndifferenceBold'; font-weight: normal; 
                 font-style: normal; 
                 border: transparent;
@@ -145,23 +184,21 @@
                 color:white;
                 transition-duration: 0.4s;
                 box-shadow: 0px 3px 10px #0022ca4f;
+                text-align: center;
+                text-decoration: none;
             }
-            .cv{
+
+            a:hover{
+                width: 200px;
+            }
+        
+            .download{
                 color: #002aff;
                 background: white;
                 box-shadow: 0px 3px 10px #0000004f;
-    
             }
-            
         }
-        button:hover { 
-            width: 200px;
-          }
-
-        
     }
-
-    
 }
 
 .ProjectsCards{ //All containers of projects
@@ -169,14 +206,51 @@
     display: flex;
     flex-direction: column;
 
+    @media (min-width: 900px) {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .titleContainer{
+        width:90%;
+        align-self: center;
+        padding: 20px 0px;
+        margin-top: 80px;
+
+    }
+
+    hr{
+        width: 80vw;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .title{
+        font-family: 'GlacialIndifferenceRegular'; font-weight: normal; 
+        font-style: normal; 
+        text-align: center;
+
+
+    }
+
     .card{
         margin-bottom: 40px;
-
         width: 90%;
-        max-width: 1150px;
         display: flex;
         flex-direction: row;
         padding: 10px;
+
+        @media (min-width: 1260px) {
+            max-width: 600px;
+           
+        }
+
+        @media (min-width: 900px) {
+        
+            height:540px;
+        }
+        
 
         //Glass style
         background: radial-gradient(100% 402.45% at 1.56% 0%, rgba(255, 255, 255, 0.884) 0%, rgba(255, 255, 255, 0.226) 100%);
@@ -191,11 +265,8 @@
         flex: 1;
         justify-content: center;
         align-self: center;
-        margin: 10px;
         color: #131a3a;
-        @media (max-width: 900px) {
-            margin: 0px 40px ;
-        }
+        margin: 0px 20px ;
         
     }
 
@@ -212,7 +283,6 @@
 
     img{
         max-width: 90%;
-        margin: 10px 10px;
         border: 5px solid rgb(255, 255, 255);
         border-radius: 10px;
         box-shadow: 0px 3px 10px #0000004f;
@@ -243,42 +313,37 @@
         flex-direction: column;
         align-items: center;
 
-        .gradBlob { //
-            z-index: 0;
-            width:100%;
-            max-width: 1300px;
-            min-width: 900px;
-            position: absolute;
-            box-sizing: border-box;
-            margin-top: 0px;
-        }
-
         .card { //Transparent card
-            @media (max-width: 900px) {
+            
                 flex-direction: column;
-                padding: 0px;
+
+            .text{
+                padding: 20px 0px;  
             }
             
+            
             .pics{ //Image container
-                @media (max-width: 900px) {
-                    flex-direction: row;
-                    justify-content: center;
-                    margin: 30px auto 20px;
-                }
+                
+                flex-direction: row;
+                justify-content: space-evenly;
+            
+                margin: 30px auto 20px;
+                
                 
                 img{ //Images on card
-                    @media (max-width: 900px) {
-                        align-self: center;
-                        max-width: 40%;
-                    }
-                    @media (max-width: 425px) {
+
+                    
+                    align-self: center;
+                    max-width: 40%;
+                    
+                    @media (max-width: 600px) {
                         align-self: center;
                         max-width: 80%;
                     }
                 }
 
                 .login{ //Images on card
-                    @media (max-width: 425px) {
+                    @media (max-width: 600px) {
                         display: none;
                     }
                 }
@@ -294,24 +359,33 @@
         .card { //Transparent card
             @media (max-width: 550px) {
                 flex-direction: column;
-                padding: 0px;
+                
+            }
+
+            .text{
+                padding: 20px 0px;  
             }
             
             .pics{ //Image container
-                @media (max-width: 900px) {
-                    flex-direction: row;
+                
                     justify-content: center;
-                    margin: 30px auto 20px;
-                }
+                    @media (max-width: 550px) {
+                        margin: 30px auto 10px;
+                    }
+                    
+                
                 
                 img{ //Images on card
-                    max-width: 70%;
-                    @media (max-width: 900px) {
-                        align-self: center;
-                        max-width: 80%;
-                        
-                        
+                    
+                    
+                    align-self: center;
+                    max-height: 85%;
+                    @media (max-width: 550px) {
+                        max-width: 40%;
                     }
+                        
+                        
+                    
                 }
                 
             }
@@ -326,26 +400,78 @@
         .card { //Transparent card
             @media (max-width: 550px) {
                 flex-direction: column;
-                padding: 0px;
+                
             }
+
+            .text{
+                padding: 20px 0px;
+                }
             
             .pics{ //Image container
-                @media (max-width: 900px) {
-                    flex-direction: row;
-                    justify-content: center;
-                    margin: 30px auto 20px;
+                
+                justify-content: center;
+                @media (max-width: 550px) {
+                    margin: 30px auto 10px;
                 }
                 
                 img{ //Images on card
-                    max-width: 70%;
-                    @media (max-width: 900px) {
-                        align-self: center;
-                        max-width: 80%;
-                        
-                        
+                    align-self: center;
+                    max-height: 85%;
+                    margin: 20px;
+                    @media (max-width: 550px) {
+                        max-width: 40%;
                     }
                 }
                 
+            }
+        }
+    }
+
+    .MirowCard { //Container
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .card { //Transparent card
+            
+            flex-direction: column;
+
+            .text{
+                padding: 20px 0px;
+                
+                @media (min-width: 1260px) {
+                        
+                    padding: 0px
+                }
+            }
+            
+            
+            .pics{ //Image container
+                
+                
+                video{ //Images on card
+                    
+                    align-self: center;
+                    max-width:70%;
+                    margin: 30px 10px;
+                    border: 5px solid rgb(255, 255, 255);
+                    border-radius: 10px;
+                    box-shadow: 0px 3px 10px #0000004f;
+
+                    @media (min-width: 1260px) {
+                        
+                        margin: 30px 0px;
+                    }
+
+                    @media (max-width: 1260px) {
+                        max-width: 500px;
+                    }
+                  
+                    @media (max-width: 700px) {
+                        max-width:80%;
+                    }
+                }
             }
         }
     }
