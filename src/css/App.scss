@@ -1,0 +1,27 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+$primary: #131a3a;
+
+$theme-colors: (
+  "primary": $primary
+);
+
+.app{
+  //background-image: url("../assets/Rectangle.png");
+	//background-size: cover;
+  color: $primary;
+  overflow: hidden;
+  
+  p{
+    font-family: 'GlacialIndifferenceRegular'; font-weight: normal; 
+            font-style: normal; 
+  }
+  button{
+    font-family: 'GlacialIndifferenceRegular'; font-weight: normal; 
+            font-style: normal; 
+  }
+  
+
+}
+
+

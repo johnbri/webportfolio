@@ -1,0 +1,353 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+.navcontainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    z-index: 99;
+    //border-bottom: 1px solid #131a3a3f;
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+        
+        background-color: rgb(255, 255, 255);
+        
+        height:50px;
+        box-shadow: 0px 5px 10px #131a3a23;
+        
+        button{
+            height:inherit;
+            flex:1;
+            font-size: 16px;
+            background: transparent;
+            border:transparent;
+            color: #131a3a;
+            transition-duration: 0.4s;
+            
+            
+        }
+
+        button:hover { 
+            flex-grow: 1.2;
+            background:#002aff;
+            color:white;
+          }
+        
+        .name{
+            
+            font-family: 'GlacialIndifferenceBold'; font-weight: normal; 
+            font-style: normal; 
+            color: #002aff;
+            
+        }
+    }
+}
+    
+
+.Header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    .headerCard {
+        min-height: 70vh;
+        width:85%;
+        max-width: 800px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 550px) { 
+            margin-top: 50px;
+        }
+
+
+        .headerText {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height:400px;
+        
+        
+        .johnBlob {
+            margin-left: 10px;
+            width: 33vw;
+            max-width: 300px;
+            
+        }
+
+        }
+        .titleContainer {
+            width:100%;
+            
+            .title{
+            display: flex;
+            align-items: left;
+            width:60%;
+            margin-bottom: -80px;
+
+            font-family: 'Fredoka One';
+            font-size: 60px;
+            
+            @media (max-width: 425px) { 
+                font-size: 13vw;
+            }
+            @media (max-width: 550px) { 
+          
+                margin-bottom: -50px;
+            }
+        }
+        }
+        
+
+        h5 {
+            font-family: 'GlacialIndifferenceRegular'; font-weight: normal; 
+            font-style: normal; 
+            margin: 20px 0px;
+            @media (max-width: 425px) { 
+                font-size: 4.5vw;
+            }
+            
+        }
+
+        
+
+        .buttons{
+            display: flex;
+            flex-direction: row;
+            align-items: left;
+            margin-top: -80px;
+            width:100%;
+            @media (max-width: 550px) { 
+                font-size: 3vw;
+                margin-top: -50px;
+                
+            }
+
+
+            button{
+                font-family: 'GlacialIndifferenceBold'; font-weight: normal; 
+                font-style: normal; 
+                border: transparent;
+                border-radius: 10px;
+                background:#002aff;
+                //background: radial-gradient(100% 402.45% at 1.56% 0%, #7d93ff 0%, #bd76f3 100%);
+                padding: 10px 20px;
+                margin-right: 20px;
+                width: 160px;
+                color:white;
+                transition-duration: 0.4s;
+                box-shadow: 0px 3px 10px #0022ca4f;
+            }
+            .cv{
+                color: #002aff;
+                background: white;
+                box-shadow: 0px 3px 10px #0000004f;
+    
+            }
+            
+        }
+        button:hover { 
+            width: 200px;
+          }
+
+        
+    }
+
+    
+}
+
+.ProjectsCards{ //All containers of projects
+    
+    display: flex;
+    flex-direction: column;
+
+    .card{
+        margin-bottom: 40px;
+
+        width: 90%;
+        max-width: 1150px;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+
+        //Glass style
+        background: radial-gradient(100% 402.45% at 1.56% 0%, rgba(255, 255, 255, 0.884) 0%, rgba(255, 255, 255, 0.226) 100%);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        backdrop-filter: blur(5px);
+        border-radius: 32px;
+        box-shadow: 0px 5px 10px #00000034;
+    }
+
+    .text{
+        flex: 1;
+        justify-content: center;
+        align-self: center;
+        margin: 10px;
+        color: #131a3a;
+        @media (max-width: 900px) {
+            margin: 0px 40px ;
+        }
+        
+    }
+
+    .pics{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    h2 {
+        font-family: 'Fredoka One';
+    }
+
+    img{
+        max-width: 90%;
+        margin: 10px 10px;
+        border: 5px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        box-shadow: 0px 3px 10px #0000004f;
+    }
+    
+    button{
+        font-family: 'GlacialIndifferenceBold'; font-weight: normal; 
+        font-style: normal; 
+        border: transparent;
+        border-radius: 10px;
+        background: transparent;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        color:#002aff;
+        width: 130px;
+        background:white;
+        box-shadow: 0px 3px 10px #0000004f;
+        transition-duration: 0.4s;
+    }
+
+    button:hover { 
+        width: 170px;
+        
+    }
+
+    .UniquizCard { //Container
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .gradBlob { //
+            z-index: 0;
+            width:100%;
+            max-width: 1300px;
+            min-width: 900px;
+            position: absolute;
+            box-sizing: border-box;
+            margin-top: 0px;
+        }
+
+        .card { //Transparent card
+            @media (max-width: 900px) {
+                flex-direction: column;
+                padding: 0px;
+            }
+            
+            .pics{ //Image container
+                @media (max-width: 900px) {
+                    flex-direction: row;
+                    justify-content: center;
+                    margin: 30px auto 20px;
+                }
+                
+                img{ //Images on card
+                    @media (max-width: 900px) {
+                        align-self: center;
+                        max-width: 40%;
+                    }
+                    @media (max-width: 425px) {
+                        align-self: center;
+                        max-width: 80%;
+                    }
+                }
+
+                .login{ //Images on card
+                    @media (max-width: 425px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .NGFCard { //Container
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .card { //Transparent card
+            @media (max-width: 550px) {
+                flex-direction: column;
+                padding: 0px;
+            }
+            
+            .pics{ //Image container
+                @media (max-width: 900px) {
+                    flex-direction: row;
+                    justify-content: center;
+                    margin: 30px auto 20px;
+                }
+                
+                img{ //Images on card
+                    max-width: 70%;
+                    @media (max-width: 900px) {
+                        align-self: center;
+                        max-width: 80%;
+                        
+                        
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .ThaiboatCard { //Container
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .card { //Transparent card
+            @media (max-width: 550px) {
+                flex-direction: column;
+                padding: 0px;
+            }
+            
+            .pics{ //Image container
+                @media (max-width: 900px) {
+                    flex-direction: row;
+                    justify-content: center;
+                    margin: 30px auto 20px;
+                }
+                
+                img{ //Images on card
+                    max-width: 70%;
+                    @media (max-width: 900px) {
+                        align-self: center;
+                        max-width: 80%;
+                        
+                        
+                    }
+                }
+                
+            }
+        }
+    }
+}
+  
