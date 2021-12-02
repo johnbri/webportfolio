@@ -46,6 +46,8 @@
             text-align: center;
             text-decoration: none;
             line-height:50px;
+            font-family: 'GlacialIndifferenceRegular'; font-weight: normal; 
+            font-style: normal; 
             
             /*@media screen and (max-width: 600px) {
                 display: none;
@@ -99,31 +101,25 @@
         min-height: 70vh;
         width:90%;
         max-width: 800px;
-        
+        margin-top: 100px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        @media (max-width: 550px) { 
-            margin-top: 50px;
-        }
-
-
+        
         .headerText {
         display: flex;
         flex-direction: row;
         align-items: center;
         height:400px;
         
-        
-        .johnBlob {
-            margin-left: 10px;
-            width: 33vw;
-            max-width: 300px;
-            
+            .johnBlob {
+                margin-left: 10px;
+                width: 33vw;
+                max-width: 300px;
+            }
         }
 
-        }
         .titleContainer {
             width:100%;
             
@@ -132,18 +128,14 @@
             align-items: left;
             width:60%;
             margin-bottom: -80px;
-
             font-family: 'Fredoka One';
             font-size: 60px;
             
             @media (max-width: 425px) { 
                 font-size: 13vw;
             }
-            @media (max-width: 550px) { 
-          
-                margin-bottom: -50px;
+            
             }
-        }
         }
         
 
@@ -151,27 +143,31 @@
             font-family: 'GlacialIndifferenceRegular'; font-weight: normal; 
             font-style: normal; 
             margin: 20px 0px;
+
             @media (max-width: 425px) { 
                 font-size: 4.5vw;
             }
-            
-        }
 
-        
+            @media (max-width: 550px) { 
+                margin-top: 50px;
+            }
+        }
 
         .buttons{
             display: flex;
             flex-direction: row;
-            align-items: left;
+            gap: 20px;
+
             margin-top: -80px;
             width:100%;
             @media (max-width: 550px) { 
-                font-size: 3vw;
+                font-size: 16px;
                 margin-top: -50px;
-                
+                justify-content: space-evenly;
             }
 
             a{
+                
                 font-family: 'GlacialIndifferenceBold'; font-weight: normal; 
                 font-style: normal; 
                 border: transparent;
@@ -179,7 +175,7 @@
                 background:#002aff;
                 //background: radial-gradient(100% 402.45% at 1.56% 0%, #7d93ff 0%, #bd76f3 100%);
                 padding: 10px 20px;
-                margin-right: 20px;
+                //margin-right: 20px;
                 width: 160px;
                 color:white;
                 transition-duration: 0.4s;
@@ -188,10 +184,12 @@
                 text-decoration: none;
             }
 
-            a:hover{
-                width: 200px;
+            @media (hover: hover) {
+                a:hover{
+                    width: 200px;
+                }
             }
-        
+            
             .download{
                 color: #002aff;
                 background: white;
@@ -247,7 +245,6 @@
         }
 
         @media (min-width: 900px) {
-        
             height:540px;
         }
         
@@ -359,7 +356,6 @@
         .card { //Transparent card
             @media (max-width: 550px) {
                 flex-direction: column;
-                
             }
 
             .text{
@@ -367,27 +363,16 @@
             }
             
             .pics{ //Image container
-                
                     justify-content: center;
-                    @media (max-width: 550px) {
-                        margin: 30px auto 10px;
-                    }
-                    
-                
                 
                 img{ //Images on card
-                    
-                    
                     align-self: center;
                     max-height: 85%;
                     @media (max-width: 550px) {
                         max-width: 40%;
+                        margin: 30px auto 10px;
                     }
-                        
-                        
-                    
                 }
-                
             }
         }
     }
@@ -400,7 +385,6 @@
         .card { //Transparent card
             @media (max-width: 550px) {
                 flex-direction: column;
-                
             }
 
             .text{
@@ -408,11 +392,7 @@
                 }
             
             .pics{ //Image container
-                
                 justify-content: center;
-                @media (max-width: 550px) {
-                    margin: 30px auto 10px;
-                }
                 
                 img{ //Images on card
                     align-self: center;
@@ -420,9 +400,9 @@
                     margin: 20px;
                     @media (max-width: 550px) {
                         max-width: 40%;
+                        margin: 30px auto 10px;
                     }
                 }
-                
             }
         }
     }
