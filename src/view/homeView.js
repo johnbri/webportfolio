@@ -30,7 +30,7 @@ const homeView= () =>
                 <h5>
                     Hey there, I'm John. I'm currently a MSc student in Interactive 
                     Media Technology at KTH Royal Institue of Technology, Stockholm. 
-                    Web development is my jam, but more importantly, I enjoy building awesome products with great user experience.
+                    Web development is my jam, but more importantly, I enjoy building awesome products with great user experiences.
                     Let's have a chat!
                 </h5>
                 
