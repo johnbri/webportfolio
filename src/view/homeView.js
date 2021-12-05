@@ -1,14 +1,5 @@
 import '../css/Home.scss';
 
-/*
-function myFunction() {
-        var x = document.getElementById("navBar");
-        if (x.className === "navbar") {
-          x.className += " responsive";
-        } else {
-          x.className = "navbar";
-        }
-      }*/
 
 const homeView= () =>
 <div className="app">
@@ -22,9 +13,6 @@ const homeView= () =>
         <a role="button" href="#about" >About me</a> 
         <a role="button" href="#ProjectsCards">My work</a> 
         <a class="contact" role="button" href = "mailto: john-brink@hotmail.com">Contact me</a>
-        {/*<a href="javascript:void(0);" class="icon" onClick={myFunction()}>
-            <i class="fa fa-bars"></i>
-    </a>*/}
         </div>
     </div>
         
@@ -51,7 +39,7 @@ const homeView= () =>
         
             <div class="buttons">
                     <a role="button" href = "mailto: john-brink@hotmail.com">CONTACT ME</a>
-                    <a class="download" role="button" href="/images/myw3schoolsimage.jpg" download>DOWNLOAD CV</a>
+                    <a class="download" role="button" href="CVJohnBrink.pdf" download="CVJohnBrink.pdf">DOWNLOAD CV</a>
             </div>
         </div>
         
