@@ -8,7 +8,7 @@
     margin: auto;
     width: 100%;
     z-index: 99;
-    //border-bottom: 1px solid #131a3a3f;
+ 
     .navbar{
         display: flex;
         flex-direction: row;
@@ -25,15 +25,6 @@
                 display: block;
             }
         }
-
-        /*.responsive a.icon {
-            @media screen and (max-width: 600px) {
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
-          }*/
-        
         
         a{
             height:inherit;
@@ -48,19 +39,7 @@
             line-height:50px;
             font-family: 'GlacialIndifferenceRegular'; font-weight: normal; 
             font-style: normal; 
-            
-            /*@media screen and (max-width: 600px) {
-                display: none;
-            }*/
         }
-
-        /*.responsive a {
-            @media screen and (max-width: 600px) {
-                float: none;
-                display: block;
-                text-align: left;
-            }
-          }*/
 
         a:hover { 
             flex-grow: 1.2;
@@ -68,7 +47,6 @@
             color:white;
           }
 
-        
         .name{
             height:inherit;
             flex:1;
