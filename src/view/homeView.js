@@ -20,7 +20,7 @@ const homeView= () =>
         <div className="headerCard">
             <div class="titleContainer">
                 <h3 class="title">
-                    I'm a Product Designer.
+                    I'm a Product Designer. 
                 </h3>
             </div>
             
@@ -29,8 +29,8 @@ const homeView= () =>
                 
                 <h5>
                     Hey there, I'm John. I'm currently a MSc student in Interactive 
-                    Media Technology at KTH Royal institue of Technology, Stockholm. 
-                    Webdesign is my jam, but more importantly, I enjoy building awesome user experiences.
+                    Media Technology at KTH Royal Institue of Technology, Stockholm. 
+                    Web development is my jam, but more importantly, I enjoy building awesome products with great user experience.
                     Let's have a chat!
                 </h5>
                 
@@ -75,7 +75,7 @@ const homeView= () =>
                 </div>
                 <div class="text">
                     <h2 class="card-title">NaturGlass-fabriken</h2>
-                    <p class="card-text">NaturGlass-fabriken is a website design prototype made in Figma for a made-up icecream business. The design is based on a design brief which featured keywords like "natural ingredients", "flowery", "tasty", "happy", "ecological", and "bright". Features of the site were based both on my own assumptions of user needs, as well as must-have features from the design brief.</p>
+                    <p class="card-text">NaturGlass-fabriken is a website design prototype made in Figma for a mock-up icecream business. The design is based on a design brief which featured keywords like "natural ingredients", "flowery", "tasty", "happy", "ecological", and "bright". Features of the site were based both on my own assumptions of user needs, as well as must-have features from the design brief.</p>
                     
                 </div>
             </div>

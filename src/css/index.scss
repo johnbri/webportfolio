@@ -21,4 +21,13 @@ code {
     monospace;
 }
 
+
+html {
+  /* CSS custom property for the polyfill */
+  --scroll-behavior: smooth;
+
+  /* Normal CSS property for browsers with native support */
+  scroll-behavior: smooth;
+}
+
 /*linear-gradient(0deg, #f38787 0%, #fffaf2 100%)*/
