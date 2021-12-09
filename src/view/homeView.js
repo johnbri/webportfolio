@@ -27,7 +27,7 @@ const homeView= () =>
                 <h5>
                     Hey there, I'm John! I'm currently a student in my fourth year of a M.Sc. in Engineering in Interactive 
                     Media Technology at KTH Royal Institue of Technology, Stockholm. 
-                    Web development is my jam, but more importantly, I enjoy building products with great user experiences.
+                    Front-end development is my jam, but more importantly, I enjoy building products with great user experiences.
                     Let's have a chat!
                 </h5>
                 <img class="johnBlob" src="john.png" alt=""></img>
@@ -96,7 +96,7 @@ const homeView= () =>
                     <h2 class="card-title">Mirow</h2>
                     <p class="card-text"> Mirow is a concept of a smart mirror that creates sponteanous opportunities for interaction between friends.
                      This concept was based on a deisgn brief that proposed that introversion is the new normal in the future, and people might need support in this environment.
-                     The concept creation followed the iterative double diamond process, and low-fi as well as high-fi prototype were created using classic paper and pen and Figma.</p>
+                     The concept creation was an iterative process with user testing and interviews of low-fi as well as high-fi prototypes, made using classic paper and pen and Figma.</p>
                    
                 </div>
             </div>
