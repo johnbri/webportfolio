@@ -27,7 +27,7 @@ const homeView= () =>
                 <h5>
                     Hey there, I'm John! I'm currently a student in my fourth year of a M.Sc. in Engineering in Interactive 
                     Media Technology at KTH Royal Institue of Technology, Stockholm. 
-                    Web development is my jam, but more importantly, I enjoy building awesome products with great user experiences.
+                    Web development is my jam, but more importantly, I enjoy building products with great user experiences.
                     Let's have a chat!
                 </h5>
                 <img class="johnBlob" src="john.png" alt=""></img>
