@@ -84,7 +84,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
+        gap: 20px;
+
         .headerText {
         display: flex;
         flex-direction: row;
@@ -103,11 +104,18 @@
             
             .title{
             display: flex;
+            flex-direction: column;
             align-items: left;
             width:60%;
+            max-width: 400px;
             margin-bottom: -80px;
             font-family: 'Fredoka One';
             font-size: 60px;
+
+            em {  /* or .call em, but you should aim for consistency in your styling */
+                font-style: normal;
+                font-size: 50%;
+            }
             
             @media (max-width: 425px) { 
                 font-size: 13vw;
@@ -117,7 +125,8 @@
         
 
         h5 {
-            font-family: 'GlacialIndifferenceRegular'; font-weight: normal; 
+            font-family: 'GlacialIndifferenceRegular'; 
+            font-weight: normal; 
             font-style: normal; 
             margin: 20px 0px;
 
@@ -127,6 +136,10 @@
 
             @media (max-width: 550px) { 
                 margin-top: 50px;
+            }
+
+            .soon{
+                font-family: 'GlacialIndifferenceBold'; 
             }
         }
 
@@ -185,6 +198,7 @@
         flex-wrap: wrap;
     }
 
+    //projects title container
     .titleContainer{
         width:90%;
         align-self: center;
@@ -193,12 +207,14 @@
 
     }
 
+    //line under title
     hr{
         width: 80vw;
         max-width: 1000px;
         margin: auto;
     }
 
+    //projects title
     .title{
         font-family: 'GlacialIndifferenceRegular'; font-weight: normal; 
         font-style: normal; 
@@ -211,23 +227,24 @@
         width: 90%;
         display: flex;
         flex-direction: row;
-        padding: 10px;
+        padding: 20px;
+        border: none;
+        border-radius: 32px;
+        box-shadow: 0px 5px 10px #00000034;
+        background: white;
 
         @media (min-width: 1260px) {
             max-width: 600px;
-           
+        }
+
+
+        @media (min-width: 1600px) {
+            max-width: 800px;
         }
 
         @media (min-width: 900px) {
             height:540px;
         }
-
-        //Glass style
-        border: none;
-        border-radius: 32px;
-        box-shadow: 0px 5px 10px #00000034;
-        background: white;
-        transition:  0.4s;
     }
 
     .text{
@@ -236,7 +253,34 @@
         align-self: center;
         color: #131a3a;
         margin: 0px 20px ;
-        
+
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+
+        a{
+            font-family: 'GlacialIndifferenceBold'; font-weight: normal; 
+            font-style: normal; 
+            border: transparent;
+            border-radius: 10px;
+            //background: radial-gradient(100% 402.45% at 1.56% 0%, #7d93ff 0%, #bd76f3 100%);
+            padding: 10px 20px;
+            //margin-right: 20px;
+            width: 160px;
+            transition-duration: 0.4s;
+            text-align: center;
+            text-decoration: none;
+
+            color: #002aff;
+            background: white;
+            box-shadow: 0px 3px 10px #0000004f;
+        }
+
+        @media (hover: hover) {
+            a:hover{
+                width: 200px;
+            }
+        }
     }
 
     .pics{
@@ -256,26 +300,10 @@
         border-radius: 10px;
         box-shadow: 0px 3px 10px #0000004f;
     }
+
+
     
-    button{
-        font-family: 'GlacialIndifferenceBold'; font-weight: normal; 
-        font-style: normal; 
-        border: transparent;
-        border-radius: 10px;
-        background: transparent;
-        padding: 10px 20px;
-        margin-bottom: 20px;
-        color:#002aff;
-        width: 130px;
-        background:white;
-        box-shadow: 0px 3px 10px #0000004f;
-        transition-duration: 0.4s;
-    }
-
-    button:hover { 
-        width: 170px;
-    }
-
+ 
     .UniquizCard { //Container
         display: flex;
         flex-direction: column;
@@ -286,19 +314,26 @@
 
             .text{
                 padding: 20px 0px;  
+
+                a{
+                    width: 220px;
+                    opacity: 0.6;
+                    cursor: not-allowed;
+                    pointer-events: none
+                }
             }
             
             
             .pics{ //Image container
                 flex-direction: row;
                 justify-content: space-evenly;
-                margin: 30px auto 20px;
+                margin: 20px auto 10px;
                 
                 
                 img{ //Images on card
                     align-self: center;
                     max-width: 40%;
-                    
+                    max-height: 240px;
                     @media (max-width: 600px) {
                         align-self: center;
                         max-width: 80%;
@@ -326,22 +361,27 @@
 
             .text{
                 padding: 20px 0px;  
+                
             }
             
+            
             .pics{ //Image container
-                    justify-content: center;
+                justify-content: center;
+            
                 
                 img{ //Images on card
                     align-self: center;
                     max-height: 85%;
                     @media (max-width: 550px) {
                         max-width: 40%;
-                        margin: 30px auto 10px;
+                        margin: 20px auto 10px;
                     }
                 }
             }
         }
     }
+
+  
 
     .ThaiboatCard { //Container
         display: flex;
@@ -355,6 +395,8 @@
 
             .text{
                 padding: 20px 0px;
+
+                
                 }
             
             .pics{ //Image container
@@ -366,7 +408,7 @@
                     margin: 20px;
                     @media (max-width: 550px) {
                         max-width: 40%;
-                        margin: 30px auto 10px;
+                        margin: 20px auto 10px;
                     }
                 }
             }
@@ -396,6 +438,7 @@
                     
                     align-self: center;
                     max-width:70%;
+                    max-height: 240px;
                     margin: 30px 10px;
                     border: 5px solid rgb(255, 255, 255);
                     border-radius: 10px;
@@ -403,7 +446,7 @@
 
                     @media (min-width: 1260px) {
                         
-                        margin: 30px 0px;
+                        margin: 20px 0px;
                     }
 
                     @media (max-width: 1260px) {
@@ -419,3 +462,34 @@
     }
 }
   
+
+/*
+    .NGFCard { //Container
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .card { //Transparent card
+            @media (max-width: 550px) {
+                flex-direction: column;
+            }
+
+            .text{
+                padding: 20px 0px;  
+
+            }
+            
+            .pics{ //Image container
+                    justify-content: center;
+                
+                img{ //Images on card
+                    align-self: center;
+                    max-height: 85%;
+                    @media (max-width: 550px) {
+                        max-width: 40%;
+                        margin: 30px auto 10px;
+                    }
+                }
+            }
+        }
+    }*/

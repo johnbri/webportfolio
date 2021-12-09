@@ -20,12 +20,12 @@ const homeView= () =>
         <div className="headerCard">
             <div class="titleContainer">
                 <h3 class="title">
-                    I'm a Product Designer. 
+                    I'm a Product Designer. <br/> <em>(Soon enough🤞🏼)</em>
                 </h3>
             </div>
             <div class="headerText">
                 <h5>
-                    Hey there, I'm John. I'm currently a MSc student in Interactive 
+                    Hey there, I'm John! I'm currently a student in my fourth year of a M.Sc. in Engineering in Interactive 
                     Media Technology at KTH Royal Institue of Technology, Stockholm. 
                     Web development is my jam, but more importantly, I enjoy building awesome products with great user experiences.
                     Let's have a chat!
@@ -46,7 +46,6 @@ const homeView= () =>
         </div>
         
         <div class="UniquizCard">
-            <span id="label1"></span>
             <div class="card">
                 <div class="pics">
                     <img class="login" src="login.png" alt=""></img>
@@ -55,25 +54,25 @@ const homeView= () =>
                 <div class="text">
                     <h2 class="card-title">Uniquiz</h2>
                     <p class="card-text">Uniquiz is a web-based music quiz that lets you challenge your friends with music that you all have heard before. When creating a quiz, the host selects how many tracks should be played as well as how long each track should be played. By analyzing Spotify playlists the application then picks out random songs that all players in the quiz have in common. Like any other quiz, the player with the best score wins! The application were made in React using Javascript (JSX), HTML5, CSS. Furthermore, it uses Spotify API calls to analyze playlists, and Firebase to handle accounts.</p>
+                    <a role="button" href = "https://uniquiz-e9d1f.web.app" target="_blank" rel="noreferrer" >UNDER MAINTENANCE</a>
                 </div>
             </div>
         </div>
         
         <div class="NGFCard">
-            <span id="label1"></span>
             <div class="card">
                 <div class="pics">
                     <img class="login" src="ngf.png" alt=""></img>
                 </div>
                 <div class="text">
                     <h2 class="card-title">NaturGlass-fabriken</h2>
-                    <p class="card-text">NaturGlass-fabriken is a website design prototype made in Figma for a mock-up icecream business. The design is based on a design brief which featured keywords like "natural ingredients", "flowery", "tasty", "happy", "ecological", and "bright". Features of the site were based both on my own assumptions of user needs, as well as must-have features from the design brief.</p>
+                    <p class="card-text">NaturGlass is a website design made in Figma for a mock-up icecream business. The design is based on a brief which featured keywords like "natural", "flowery", "tasty", "happy", "ecological", and "bright". Features of the site were based on assumptions of user needs, as well as must-have features from the brief.</p>
+                    <a role="button" href="NGF.pdf" download="NGF.pdf">DOWNLOAD PDF</a>
                 </div>
             </div>
         </div>
 
         <div class="ThaiboatCard">
-            <span id="label1"></span>
             <div class="card">
                 <div class="pics">
                     <img src="tb.jpg" alt=""></img>
@@ -81,12 +80,12 @@ const homeView= () =>
                 <div class="text">
                     <h2 class="card-title">Thaiboat 2.0</h2>
                     <p class="card-text">Thaiboat 2.0 is a high-fidelty prototype remake of the website of the restaurant Thaiboat, and was made using the free version of Wordpress as part of a course in web management. Besides a new design, the website features changes to the site's information architecture based on reflections about users needs and requirements. </p>
+                    <a role="button" href = "https://thaiboat2.wordpress.com" target="_blank" rel="noreferrer">VISIT WEBSITE</a>
                 </div>
             </div>
         </div>
 
         <div class="MirowCard">
-            <span id="label1"></span>
             <div class="card">
                 <div class="pics">
                     <video poster="placeholder.png" controls>
@@ -108,3 +107,19 @@ const homeView= () =>
 
 
 export {homeView};
+
+
+/*
+<div class="NGFCard">
+            <span id="label1"></span>
+            <div class="card">
+                <div class="pics">
+                    <img class="login" src="ngf.png" alt=""></img>
+                </div>
+                <div class="text">
+                    <h2 class="card-title">NaturGlass-fabriken</h2>
+                    <p class="card-text">NaturGlass-fabriken is a website design prototype made in Figma for a mock-up icecream business. The design is based on a design brief which featured keywords like "natural ingredients", "flowery", "tasty", "happy", "ecological", and "bright". Features of the site were based both on my own assumptions of user needs, as well as must-have features from the design brief.</p>
+                </div>
+            </div>
+        </div>
+        */
