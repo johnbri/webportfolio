@@ -27,7 +27,7 @@ const homeView= () =>
                 <h5>
                     Hey there, I'm John! I'm currently a student in my fourth year of a M.Sc. in Engineering in Interactive 
                     Media Technology at KTH Royal Institue of Technology, Stockholm. 
-                    Front-end development is my jam, but more importantly, I enjoy building products with great user experiences.
+                    Web development is my jam, but more importantly, I enjoy building products with great user experiences.
                     Let's have a chat!
                 </h5>
                 <img class="johnBlob" src="john.png" alt=""></img>
@@ -66,7 +66,7 @@ const homeView= () =>
                 </div>
                 <div class="text">
                     <h2 class="card-title">NaturGlass-fabriken</h2>
-                    <p class="card-text">NaturGlass is a website design made in Figma for a mock-up icecream business. The design is based on a brief which featured keywords like "natural", "flowery", "tasty", "happy", "ecological", and "bright". Features of the site were based on assumptions of user needs, as well as must-have features from the brief.</p>
+                    <p class="card-text">NaturGlass is a website design made in Figma for a mock-up icecream business. The design is based on a brief which featured keywords like "natural", "flowery", "tasty", "happy", "ecological", and "bright". Features of the site were based on assumptions of user needs based on information from the design breif.</p>
                     <a role="button" href="NGF.pdf" download="NGF.pdf">DOWNLOAD PDF</a>
                 </div>
             </div>
